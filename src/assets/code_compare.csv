@@ -1,0 +1,117 @@
+﻿对比部分,对比内容,对比细节,Python,Java,JavaScript,Dart,R语言
+,,,解释语言,编译语言,,,
+,,大小写敏感,是,是,,,
+,,进入交互命令后,python,jshell,node,,
+整体特点,,是否基于赋值来变化数据类型,,,弱数据类型,,
+整体特点,,语法的轻微错误是否引起错误,,强语法,弱语法,,
+整体特点,,,动态类型,静态类型,,,
+书写,后缀,,.py,.java,.js,.dart,.R
+书写,代码段表示,,冒号和缩进,,花括号,花括号,花括号
+书写,注释,单行注释,#,//,//,//,#
+书写,注释,多行注释,'''''',/* */,,,
+书写,注释,文档注释,,/** */,,,
+数据类型,字符串,声明字符串,"value = ""string""","String value = ""string""","var value = ""string""",,
+数据类型,字符串,获得字符串的长度,len(value),value.length(),value.length,,
+数据类型,字符串,字符串的大写化,value.upper(),value.toUpperCase(),value.toUpperCase(),,
+数据类型,字符串,索引,value.index(s),value.indexOf(s),value.indexOf(s),,
+数据类型,字符串,格式化,value.format(key=value),"String.format(pattern, value)",,,
+数据类型,字符串,选择局部,value[1:3],"value.substring(1,3)","value.slice(1,3)",,
+数据结构,布尔值,,"True,False","true,false","true,false","true,false","TRUE,FALSE"
+数据计算,运算符,完全相等的判断,==,==,===,==,==
+数据计算,运算符,且判断,and,&&,&&,&&,&
+数据计算,运算符,或判断,or,||,||,||,|
+数据计算,运算符,非判断,not,!,!,,
+数据计算,运算符,取整数相除的精确解,a/b,a*1.0/b,,,
+数据计算,运算符,取整数相除的商,a//b,a/b,,,
+数据计算,运算符,取整数相除的余数,a%b,a%b,,,
+数据计算,运算符,三元表达式/三目运算符,a if x else b,x?a:b,x?a:b,x?a:b,
+数据计算,数据转化,字符转化为数字,int(a),Integer.parseInt(a),parseInt(a),int.parse(a),as.numeric(a)
+数据计算,数据转化,数字转化为字符,str(b),Integer.toString(b),b.toString(),b.toString(),as.numeric(b)
+数据结构,字典,对象/字典定义中的键设置,必须使用不可变的实际值作为键,,可以直接使用变量名作为键,,
+数据结构,索引起始序号,,从零开始,,从零开始,从零开始,从1开始
+数据结构,字典,对象/字典,dict,"Map<Key,Value>",object,Maps,list
+数据结构,字典,返回对象/字典的key,dict.keys(),map.keySet(),object.keys(obj),,names(list)
+数据结构,深度复制,,object.copy(),,JSON.parse( JSON.stringify( obj ) ),,
+数据结构,ifnull判断,,"""value"" if x is None else x",,"x||""value""","b ??= ""value"";",
+数据结构,声明对象是否需要指定类型,,不需要,必须有,可有可不有,需要,不需要
+数据结构,不可修改对象,,tuple,array,未知,final或const定义的对象,无
+数据结构,去重组合,,set1 = {},,未知,var set1 = {},
+数据结构,类型测试,,"isinstance(x ,type)",x instanceof type,,x is type或 x is! type,
+数据结构,单一类型数组,数组定义,,"int[] x = new int[3];
+int[] x = {a, b, c};",,,
+数据结构,泛型数组,数组定义,"x = [a, b, c]",Collection x = new ArrayList();,"x = [a, b, c]",list,Vector
+数据结构,泛型数组,在末尾增加一个元素,x.append,add​(E element),x.push,add,"append(x,new)"
+数据结构,泛型数组,指定位置插入,x.insert,"add​(int index, E element)",,,
+数据结构,泛型数组,删除指定位置一个元素,x.pop(index),x.remove(index),x.pop(index),removeAt(index),
+数据结构,泛型数组,删除指定一个元素,,x.remove​(Object o),,,
+数据结构,泛型数组,在开头向左平移一个元素，返回被移除的元素,无,,x.shift(),,
+数据结构,泛型数组,在开头填充元素,无,,x.unshift(element),,
+数据结构,泛型数组,根据开始和结束位置索引片段,"[begain,end]","x.subList​(int fromIndex, int toIndex)","x.slice(begain,end)",,
+数据结构,泛型数组,索引从pos开始的n个元素,无,,"x.splice(pos,n)",,
+数据结构,泛型数组,复制,[:],,x.splice(),,
+数据结构,泛型数组,颠倒序列的顺序,x.reverse,,x.reverse,,rev
+数据结构,泛型数组,对序列进行排序,x.sort,x.sort,x.sort,sort,sort
+数据结构,泛型数组,某元素出现的首个位置,x.index(element),x.indexOf(element),x.indexOf(element),indexOf,
+数据结构,泛型数组,某元素出现的最后位置,无,,x.lastIndexOf(element),,
+数据结构,泛型数组,对每个元素执行一个操作,for循环,,list.forEach(function),list.forEach(function),for循环
+数据结构,泛型数组,对每个元素执行一个操作并返回操作后的结果,列表表达式,,list.map(function),list.map(function),
+数据结构,泛型数组,过滤符合筛选条件的值,列表表达式的过滤环节,,filter(function(element){return element>1}),,
+数据结构,泛型数组,任何值都符合则返回true,all(list),,list.every(function),list.every(function),
+数据结构,泛型数组,存在值符合则返回true,any(list),,list.some(function),,
+数据结构,泛型数组,迭代得应用操作,无,,reduce,reduce,
+数据结构,泛型数组,合并为字符串,"""delimiter"".join(list)",,list.join(delimiter),list.join(delimiter),"paste(vector,collapse = """")"
+数据结构,泛型数组,元素是否在数组中,Element in array,,Array.includes(element),,element %in% vector
+数据结构,泛型数组,超出数组界限创建,不支持,,因为数组也是对象所以支持,,
+数据结构,泛型数组,列表长度计算,len(list),x.size(),list.length,list.length,length(vector)
+数据结构,泛型数组,列表生成式,"[i for i in [1,2,3] if i > 1]",,未知,"[for(var i in [1,2,3]) if(i > 1) '$i']",
+数据结构,泛型数组,在末尾增加多个元素/拓展列表,extend,,concat,addAll,"c(v1, v2)"
+数据结构,泛型数组,清空列表,,,,clear,
+数据结构,泛型数组,判断列表是否为空,,,,isEmpty,
+数据结构,栈,定义,,new Stack(),,,
+数据结构,栈,进栈,,push,,,
+数据结构,栈,出栈,,pop,,,
+数据结构,栈,查看栈顶元素,,peek,,,
+数据结构,队列,定义,,new LinkList(),,,
+数据结构,队列,入队,,offer,,,
+数据结构,队列,出队,,poll,,,
+函数,匿名函数,,f = lambda x:x*2,,f = x => x * 2,(x) => x*2 或 (x) {x*2},
+函数,函数定义,,def funcname():statement,"Not function, Only method",function funcname(){},funcname(){},funcname = function() {}
+函数,函数结果返回指令,,return,,return,return,return()
+函数,单行函数快捷书写,,def funcname():statement,,未知,bool funcname() => statement;,
+函数,传入带名参数的方法,,func(x=1),,func(x=1),func(x:1),func(x=1)
+面向对象,类型判断,,type(object),object.getClass(),typeof object,p.runtimeType,class(object)
+面向对象,缺失值判断并赋值,,直接赋值,,直接赋值,b ??= value;,
+面向对象,安全的变量赋值,,p.y = 4,,p.y = 4,p?.y =4,
+面向对象,类结构,构造函数,def __init__(self),public ClassName(),,直接在类下定义变量,
+面向对象,类结构,类自身的引用,self,this,this,this,
+控制流,否则如果,,elif,else if,else if,else if,else if
+控制流,Switch循环,是否支持,无,switch(){case value:expr;break;},switch(){case value:expr;break;},switch-case,
+控制流,错误处理,抛出错误,raise,throw,throw,throw,
+控制流,错误处理,捕捉错误,try-except-else-finally,try-catch-finally,try-catch-finally,try-catch-finally,
+控制流,循环控制,,支持continue和break,支持continue和break,支持continue和break,支持continue和break,支持next和break
+控制流,For循环,基本for循环结构,for statement:,for (statement 1; statement 2; statement 3) {},,,
+控制流,For循环,对值进行循环,for statement:,for (type variableName : arrayName) {},for (value of values){},,
+控制流,测试,,assert x == 1,,,assert(x ==1),
+基础编程,数学,最大值,"max([value1,value2])","Math.max(value1, value2)",,,
+基础编程,数学,根方,value ** -1,Math.sqrt(value),,,
+基础编程,数学,绝对值,abs(value),Math.abs(value),,,
+基础编程,数学,随机值,random.random(),Math.random(),,,
+基础编程,计算机,十进制转二进制,bin(value),Integer.toBinaryString(value),,,
+基础编程,计算机,二进制转十进制,,,,,
+基础编程,内置函数和标准库,,内置函数丰富,,内置函数较少，但对象方法多,,内置函数丰富
+基础编程,正则表达式,,re库,string.matches,内置RegExp或//,,grep、gsub
+基础编程,打印,,print(),,console.info(),print(),print
+基础编程,传值机制,,相同引用,,完全复制,,
+基础编程,字符构造函数,,"f""hello {var}""",,"""hello "" + var","""hello $var""或者""hello "" + var",
+基础编程,程序暂停,,time.sleep(seconds),Thread.sleep(micro_seconds),,,
+高级编程,异步,,,,,,
+开发环境,安装方式,,,,,,
+开发环境,执行方式,,,,,,
+数据类型,日期时间,获得当前时间,datetime.datetime.now() ,LocalDateTime.now(),,,
+数据类型,日期时间,日期增加,dt + datetime.timedelta(days=1) ,dt.plusDays(1),,,
+数据类型,日期时间,字符串转日期,"datetime.datetime.strptime(string, format)","DateTimeFormatter formatter = DateTimeFormatter.ofPattern(""yyyy MM dd"");
+LocalDateTime dt = date.parse(string);",,,
+数据类型,日期时间,日期转字符串,"datetime.datetime.strftime(string, format)","DateTimeFormatter formatter = DateTimeFormatter.ofPattern(""yyyy MM dd"");
+String text = date.format(formatter);",,,
+数据类型,日期时间,由年月日构造日期,"datetime.date(year, month, day)","LocalDate.of(year, month, day);",,,
+数据类型,日期时间,当前时间戳的秒数/毫秒数,time.time(),System.currentTimeMillis(),,,

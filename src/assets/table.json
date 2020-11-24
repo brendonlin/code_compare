@@ -1,0 +1,33 @@
+{
+    "columns": ["Category", "Content", "Detail", "Python", "JavaScript"],
+    "rows": [
+      [
+        "数据类型",
+        "字符串",
+        "字符串大写",
+        "$(string).upper()",
+        "$(string).toUpperCase()"
+      ],
+      [
+        "数据类型",
+        "字符串",
+        "字符串长度",
+        "len($(string))",
+        "$(string).length"
+      ],
+      [
+        "数据类型",
+        "字符串",
+        "索引",
+        "$(string).index($(integer))",
+        "$(string).indexOf($(integer))"
+      ],
+      [
+        "数据类型",
+        null,
+        "索引",
+        "$(string).index($(integer))",
+        "$(string).indexOf($(integer))"
+      ]
+    ]
+  }
